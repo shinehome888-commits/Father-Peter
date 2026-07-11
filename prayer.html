@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer Requests — Father Peter</title>
+  <meta name="description" content="Share your prayer request with Father Peter. He would be honored to pray with you." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-cross">✝</div>
+    <h1>Father Peter</h1>
+    <p>Walking Together in Faith, Hope, and Love.</p>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
+        <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Daily Reflection</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="prayer.html" class="active">Prayer Requests</a></li>
+          <li><a href="children.html">Children's Gathering</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+        <a href="#" class="whatsapp-btn wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Prayer Requests</h1>
+    <p>If you need prayer, I would be honored to pray with you.</p>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="prayer-form-card fade-in">
+        <h2>Share Your Intention</h2>
+        <p>Write your prayer request below. When you click send, it will open WhatsApp with your message — private and simple.</p>
+
+        <form id="prayer-form">
+          <label for="prayer-name">Your Name (optional)</label>
+          <input type="text" id="prayer-name" placeholder="e.g. Mary" />
+
+          <label for="prayer-request">Your Prayer Request</label>
+          <textarea id="prayer-request" placeholder="Share what is on your heart..." required></textarea>
+
+          <button type="submit" class="btn btn-gold">💬 Send Prayer Request on WhatsApp</button>
+        </form>
+
+        <p style="margin-top: 2rem; font-style: italic; color: var(--deep-blue);">
+          "The prayer of a righteous person is powerful and effective." — James 5:16
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
+        <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reflection.html">Daily Reflection</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministry</h4>
+        <a href="prayer.html">Prayer Requests</a>
+        <a href="children.html">Children's Gathering</a>
+        <a href="donate.html">Donate</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#" class="wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp Message</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="current-year"></span> Father Peter. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
