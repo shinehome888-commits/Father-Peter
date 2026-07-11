@@ -7,6 +7,102 @@
   <meta name="description" content="Welcome to the online ministry of Father Peter. Daily Bible reflections, spiritual teachings, prayer support, and children's gatherings — walking together in faith, hope, and love." />
   <meta name="keywords" content="Catholic priest, Father Peter, Bible reflection, prayer, Catholic ministry, faith" />
   <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    /* Home Page Background */
+    body {
+      background-image: url('https://i.ibb.co/2DF6NNk/IMG-0752.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    
+    /* Dark overlay for hero to ensure text readability */
+    .hero {
+      background: rgba(0, 0, 0, 0.65);
+      position: relative;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* 3D Moving Picture for Home Page */
+    .moving-3d-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      border: 3px solid #D4AF37;
+      animation: slowPan 8s ease-in-out infinite alternate;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 10px 10px rgba(0,0,0,0.4);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .moving-3d-img:hover {
+      transform: perspective(1000px) rotateY(15deg) scale(1.05) !important;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 15px 15px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.5);
+      animation-play-state: paused;
+    }
+    @keyframes slowPan {
+      0% { transform: translateX(40px) perspective(1000px) rotateY(-5deg); }
+      100% { transform: translateX(-40px) perspective(1000px) rotateY(5deg); }
+    }
+
+    /* Deep Blue WhatsApp Button 3D */
+    .whatsapp-btn {
+      background: linear-gradient(145deg, #00008B, #0000CD) !important;
+      color: white !important;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.6), -4px -4px 10px rgba(255,255,255,0.1) !important;
+      transition: all 0.3s ease !important;
+      border-radius: 50px !important;
+      padding: 12px 28px !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      border: 1px solid rgba(255,255,255,0.2) !important;
+    }
+    .whatsapp-btn:hover {
+      transform: translateY(-4px) scale(1.05) !important;
+      box-shadow: 10px 10px 25px rgba(0,0,0,0.7), -6px -6px 15px rgba(255,255,255,0.2) !important;
+      background: linear-gradient(145deg, #0000CD, #1E90FF) !important;
+    }
+    .whatsapp-btn:active {
+      transform: translateY(2px) !important;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.6) !important;
+    }
+
+    /* Reflection Button 3D */
+    .btn-primary-3d {
+      background: linear-gradient(145deg, #D4AF37, #B8860B);
+      color: #fff;
+      padding: 14px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.5), -4px -4px 10px rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.3);
+      font-size: 1.1rem;
+    }
+    .btn-primary-3d:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 10px 10px 25px rgba(0,0,0,0.6), -6px -6px 15px rgba(255,255,255,0.3);
+    }
+    .btn-primary-3d:active {
+      transform: translateY(2px);
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Footer adjustments */
+    .footer-bottom {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.85);
+      color: #ccc;
+      border-top: 2px solid #D4AF37;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,8 +119,6 @@
       <a href="index.html" class="logo">
         <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
         <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
-        <!-- Added Trademark Under Logo -->
-        <span class="logo-powered" style="display: block; font-size: 0.75rem; color: #D4AF37; margin-top: 5px; font-weight: normal; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
       </a>
 
       <button class="menu-toggle" aria-label="Toggle menu">
@@ -46,17 +140,17 @@
     </div>
   </header>
 
-  <!-- 1. Hero Section (Simplified for no scrolling) -->
+  <!-- 1. Hero Section -->
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-text fade-in">
         <h1>Welcome to <span>Father Peter's</span> Online Ministry</h1>
         <p>Through faith, prayer, and God's Word, may we walk together closer to Christ.</p>
-        <a href="reflection.html" class="btn btn-primary">Read Today's Reflection</a>
+        <a href="reflection.html" class="btn-primary-3d">Read Today's Reflection</a>
       </div>
       <div class="hero-image fade-in">
-        <!-- Replaced Picture -->
-        <img src="https://i.ibb.co/x04QDsX/Chat-GPT-Image-Jul-11-2026-07-48-43-AM.png" alt="Father Peter, Catholic priest" border="0" style="max-width: 100%; height: auto; border-radius: 10px;" />
+        <!-- Replaced Picture with 3D Moving Effect -->
+        <img src="https://i.ibb.co/x04QDsX/Chat-GPT-Image-Jul-11-2026-07-48-43-AM.png" alt="Father Peter, Catholic priest" border="0" class="moving-3d-img" />
       </div>
     </div>
   </section>
@@ -67,8 +161,6 @@
       <div class="footer-col">
         <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
         <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
-        <!-- Added Trademark in Footer -->
-        <p style="font-size: 0.8rem; color: #D4AF37; margin-top: 10px;">Powered by KS1 Empire Global Foundation (KS1EGF)</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -90,7 +182,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 Father Peter. All rights reserved. · Made with faith and love.
+      © 2026 Father Peter. All rights reserved. · Made with faith and love.<br>
+      <span style="font-size: 0.85rem; color: #D4AF37; margin-top: 8px; display: inline-block; font-weight: bold; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
     </div>
   </footer>
 
