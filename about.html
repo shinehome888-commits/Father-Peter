@@ -3,27 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Father Peter — Catholic Priest & Ministry</title>
-  <meta name="description" content="Learn about Father Peter, a Catholic priest devoted to walking with God's people through prayer, the sacraments, and the Gospel." />
+  <title>About Father Peter</title>
   <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- 3D Effects Style for the Picture -->
+  <style>
+    .about-3d-container {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .about-3d-img {
+      max-width: 400px;
+      width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.3), 0 0 20px rgba(212, 175, 55, 0.2);
+      transform: perspective(1000px) rotateY(0deg) translateZ(0);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      border: 3px solid #D4AF37;
+    }
+    .about-3d-img:hover {
+      transform: perspective(1000px) rotateY(15deg) translateZ(30px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 15px 15px rgba(0,0,0,0.4), 0 0 40px rgba(212, 175, 55, 0.4);
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Loading Screen -->
   <div class="loader" aria-hidden="true">
     <div class="loader-cross">✝</div>
     <h1>Father Peter</h1>
     <p>Walking Together in Faith, Hope, and Love.</p>
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
         <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
         <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
+        <!-- Added Trademark Under Logo -->
+        <span class="logo-powered" style="display: block; font-size: 0.75rem; color: #D4AF37; margin-top: 5px; font-weight: normal; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
       </a>
+
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
+
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -39,40 +65,43 @@
     </div>
   </header>
 
-  <section class="page-hero">
+  <!-- About Content -->
+  <main class="container" style="padding: 4rem 1rem; text-align: center;">
     <h1>About Father Peter</h1>
-    <p>A journey of faith, calling, and service.</p>
-  </section>
+    <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">A journey of faith, calling, and service.</p>
 
-  <section>
-    <div class="container about-content">
-      <img src="images/father-peter.jpg" alt="Father Peter" class="fade-in"
-           onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22667%22 viewBox=%220 0 500 667%22><rect width=%22500%22 height=%22667%22 fill=%22%2312355B%22/><text x=%2250%25%22 y=%2245%25%22 font-family=%22Georgia,serif%22 font-size=%2270%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>✝</text><text x=%2250%25%22 y=%2258%25%22 font-family=%22Georgia,serif%22 font-size=%2232%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Father Peter</text></svg>';" />
-      <div class="fade-in">
-        <h2>My Story</h2>
-        <p>Peace be with you. I am Father Peter, a Catholic priest called by the Lord to serve His people with humility and love. This website is a small window into my ministry — a place where we can walk together in faith, hope, and love.</p>
-
-        <h2>Journey of Faith</h2>
-        <p>My journey with Christ began in a simple home, where my family taught me to pray, to trust, and to love. From an early age, I felt drawn to the altar, to the Scriptures, and to the quiet presence of the Lord in daily life.</p>
-
-        <h2>Calling to the Priesthood</h2>
-        <p>Over the years, that gentle calling grew into a clear vocation. I entered the seminary, formed my heart in prayer, and was ordained to serve the Church. The priesthood is not a career — it is a gift, a cross, and a joy.</p>
-
-        <h2>My Ministry</h2>
-        <p>Today, my ministry is centered on three things: the Word of God, the sacraments, and the people God entrusts to my care. I preach, I teach, I pray — and I walk alongside those who are joyful, those who are hurting, and those who are searching.</p>
-
-        <h2>A Personal Message</h2>
-        <p>Whoever you are, wherever you are on your journey — you are welcome here. May this space be a place of peace for your soul. And may we, together, grow closer to the heart of Christ.</p>
-        <p style="font-style: italic; color: var(--gold); font-weight: 700;">— Father Peter</p>
-      </div>
+    <!-- 3D Picture Added Here -->
+    <div class="about-3d-container">
+      <img src="https://i.ibb.co/M5ySxpCD/Chat-GPT-Image-Jul-11-2026-07-39-03-AM.png" alt="About Father Peter" border="0" class="about-3d-img" />
     </div>
-  </section>
 
+    <section style="text-align: left; max-width: 800px; margin: 0 auto;">
+      <h2>My Story</h2>
+      <p>Peace be with you. I am Father Peter, a Catholic priest called by the Lord to serve His people with humility and love. This website is a small window into my ministry — a place where we can walk together in faith, hope, and love.</p>
+
+      <h2>Journey of Faith</h2>
+      <p>My journey with Christ began in a simple home, where my family taught me to pray, to trust, and to love. From an early age, I felt drawn to the altar, to the Scriptures, and to the quiet presence of the Lord in daily life.</p>
+
+      <h2>Calling to the Priesthood</h2>
+      <p>Over the years, that gentle calling grew into a clear vocation. I entered the seminary, formed my heart in prayer, and was ordained to serve the Church. The priesthood is not a career — it is a gift, a cross, and a joy.</p>
+
+      <h2>My Ministry</h2>
+      <p>Today, my ministry is centered on three things: the Word of God, the sacraments, and the people God entrusts to my care. I preach, I teach, I pray — and I walk alongside those who are joyful, those who are hurting, and those who are searching.</p>
+
+      <h2>A Personal Message</h2>
+      <p>Whoever you are, wherever you are on your journey — you are welcome here. May this space be a place of peace for your soul. And may we, together, grow closer to the heart of Christ.</p>
+      <p style="text-align: right; font-style: italic;">— Father Peter</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col">
         <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
         <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
+        <!-- Added Trademark in Footer -->
+        <p style="font-size: 0.8rem; color: #D4AF37; margin-top: 10px;">Powered by KS1 Empire Global Foundation (KS1EGF)</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -90,10 +119,11 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <a href="#" class="wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp Message</a>
+        <p>A ministry of love and prayer.</p>
       </div>
     </div>
     <div class="footer-bottom">
-      © <span id="current-year"></span> Father Peter. All rights reserved.
+      © 2026 Father Peter. All rights reserved. · Made with faith and love.
     </div>
   </footer>
 
