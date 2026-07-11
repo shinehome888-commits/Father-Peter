@@ -1,203 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KS1 ALKEBULAN PAY</title>
-    <style>
-        /* General Reset & Prevent Main Page Scrolling */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Prevents scrolling on the main page */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        /* Navigation Menu */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #FFD700; /* Gold color for hover */
-        }
-
-        /* Page Sections */
-        .page-section {
-            display: none; /* Hidden by default */
-            height: 100vh;
-            padding-top: 80px; /* Space for fixed nav */
-            box-sizing: border-box;
-            overflow-y: auto; /* Allows internal scrolling if content overflows */
-            text-align: center;
-        }
-        .page-section.active {
-            display: block; /* Only show the active page */
-        }
-
-        /* Home Page Styling */
-        #home {
-            /* Background picture is left untouched as requested */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        #home img {
-            max-width: 350px;
-            width: 80%;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-        }
-        .trademark {
-            font-size: 1.3rem;
-            color: #FFD700;
-            margin-top: 20px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-        }
-
-        /* About Page Styling */
-        #about {
-            padding: 40px 20px;
-        }
-        #about h1 {
-            color: #FFD700;
-            margin-bottom: 20px;
-        }
-        #about img {
-            max-width: 450px;
-            width: 90%;
-            margin: 30px 0;
-            border-radius: 20px;
-            border: 4px solid #FFD700;
-            /* 3D Effects */
-            box-shadow: 0 15px 30px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.5), 0 0 20px rgba(255,215,0,0.3);
-            transform: perspective(1000px) rotateY(0deg);
-            transition: transform 0.6s ease, box-shadow 0.6s ease;
-        }
-        #about img:hover {
-            transform: perspective(1000px) rotateY(15deg) scale(1.03);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.8), 0 15px 15px rgba(0,0,0,0.6), 0 0 30px rgba(255,215,0,0.5);
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-btn {
-            background-color: #25D366;
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-top: 30px;
-            box-shadow: 0 8px 15px rgba(0,0,0,0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .whatsapp-btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.5);
-        }
-
-        /* Footer */
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.9);
-            color: #ccc;
-            font-size: 0.9rem;
-            z-index: 999;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Father Peter — Walking Together in Faith, Hope, and Love</title>
+  <meta name="description" content="Welcome to the online ministry of Father Peter. Daily Bible reflections, spiritual teachings, prayer support, and children's gatherings — walking together in faith, hope, and love." />
+  <meta name="keywords" content="Catholic priest, Father Peter, Bible reflection, prayer, Catholic ministry, faith" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a onclick="showPage('home')">Home</a>
-        <a onclick="showPage('about')">About</a>
-        <a onclick="showPage('services')">Services</a>
-        <a onclick="showPage('contact')">Contact</a>
-    </nav>
+  <!-- Loading Screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-cross">✝</div>
+    <h1>Father Peter</h1>
+    <p>Walking Together in Faith, Hope, and Love.</p>
+  </div>
 
-    <!-- Home Page Section -->
-    <section id="home" class="page-section active">
-        <h1>KS1 ALKEBULAN PAY</h1>
-        <!-- Replaced Picture -->
-        <img src="https://i.ibb.co/x04QDsX/Chat-GPT-Image-Jul-11-2026-07-48-43-AM.png" alt="KS1 Alkebulan Pay">
-        <!-- Trademark -->
-        <div class="trademark">Powered by KS1 Empire Global Foundation (KS1EGF)</div>
-    </section>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
+        <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
+        <!-- Added Trademark Under Logo -->
+        <span class="logo-powered" style="display: block; font-size: 0.75rem; color: #D4AF37; margin-top: 5px; font-weight: normal; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
+      </a>
 
-    <!-- About Page Section -->
-    <section id="about" class="page-section">
-        <h1>About Us</h1>
-        <p>Welcome to KS1 Alkebulan Pay. Established in 2026, we are dedicated to providing secure and seamless financial solutions.</p>
-        <!-- About Picture with 3D Effects -->
-        <img src="https://i.ibb.co/M5ySxpCD/Chat-GPT-Image-Jul-11-2026-07-39-03-AM.png" alt="About KS1">
-        <p>Our mission is to empower businesses and individuals across the globe with innovative technology.</p>
-    </section>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
 
-    <!-- Services Page Section -->
-    <section id="services" class="page-section">
-        <h1>Our Services</h1>
-        <p>We offer a range of services tailored to your needs in 2026 and beyond.</p>
-        <ul>
-            <li>Secure Transactions</li>
-            <li>Business Registration</li>
-            <li>Trust Score System</li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Daily Reflection</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="prayer.html">Prayer Requests</a></li>
+          <li><a href="children.html">Children's Gathering</a></li>
+          <li><a href="donate.html">Donate</a></li>
         </ul>
-    </section>
+        <a href="#" class="whatsapp-btn wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact Page Section -->
-    <section id="contact" class="page-section">
-        <h1>Contact Us</h1>
-        <p>Get in touch with us directly via WhatsApp.</p>
-        <!-- Updated WhatsApp Number -->
-        <a href="https://wa.me/233545129379" class="whatsapp-btn" target="_blank">Chat with us on WhatsApp</a>
-        <p style="margin-top: 40px;">© 2026 KS1 Empire Global Foundation. All Rights Reserved.</p>
-    </section>
+  <!-- 1. Hero Section (Simplified for no scrolling) -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text fade-in">
+        <h1>Welcome to <span>Father Peter's</span> Online Ministry</h1>
+        <p>Through faith, prayer, and God's Word, may we walk together closer to Christ.</p>
+        <a href="reflection.html" class="btn btn-primary">Read Today's Reflection</a>
+      </div>
+      <div class="hero-image fade-in">
+        <!-- Replaced Picture -->
+        <img src="https://i.ibb.co/x04QDsX/Chat-GPT-Image-Jul-11-2026-07-48-43-AM.png" alt="Father Peter, Catholic priest" border="0" style="max-width: 100%; height: auto; border-radius: 10px;" />
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        © 2026 KS1 ALKEBULAN PAY. All Rights Reserved.
-    </footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
+        <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
+        <!-- Added Trademark in Footer -->
+        <p style="font-size: 0.8rem; color: #D4AF37; margin-top: 10px;">Powered by KS1 Empire Global Foundation (KS1EGF)</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reflection.html">Daily Reflection</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministry</h4>
+        <a href="prayer.html">Prayer Requests</a>
+        <a href="children.html">Children's Gathering</a>
+        <a href="donate.html">Donate</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#" class="wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp Message</a>
+        <p>A ministry of love and prayer.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Father Peter. All rights reserved. · Made with faith and love.
+    </div>
+  </footer>
 
-    <script>
-        // Function to handle menu clicks and show only the selected page
-        function showPage(pageId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.page-section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            // Show the selected section
-            document.getElementById(pageId).classList.add('active');
-        }
-    </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
