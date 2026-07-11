@@ -6,24 +6,61 @@
   <title>About Father Peter</title>
   <link rel="stylesheet" href="css/style.css" />
   
-  <!-- 3D Effects Style for the Picture -->
   <style>
+    /* 3D Moving Picture for About Page */
     .about-3d-container {
       text-align: center;
       margin: 3rem 0;
     }
-    .about-3d-img {
+    .moving-3d-img-about {
       max-width: 400px;
       width: 90%;
       border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.3), 0 0 20px rgba(212, 175, 55, 0.2);
-      transform: perspective(1000px) rotateY(0deg) translateZ(0);
-      transition: transform 0.6s ease, box-shadow 0.6s ease;
       border: 3px solid #D4AF37;
+      animation: slowPanAbout 8s ease-in-out infinite alternate;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 10px 10px rgba(0,0,0,0.4);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
-    .about-3d-img:hover {
-      transform: perspective(1000px) rotateY(15deg) translateZ(30px) scale(1.03);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 15px 15px rgba(0,0,0,0.4), 0 0 40px rgba(212, 175, 55, 0.4);
+    .moving-3d-img-about:hover {
+      transform: perspective(1000px) rotateY(15deg) scale(1.05) !important;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 15px 15px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.5);
+      animation-play-state: paused;
+    }
+    @keyframes slowPanAbout {
+      0% { transform: translateX(40px) perspective(1000px) rotateY(-5deg); }
+      100% { transform: translateX(-40px) perspective(1000px) rotateY(5deg); }
+    }
+
+    /* Deep Blue WhatsApp Button 3D */
+    .whatsapp-btn {
+      background: linear-gradient(145deg, #00008B, #0000CD) !important;
+      color: white !important;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.6), -4px -4px 10px rgba(255,255,255,0.1) !important;
+      transition: all 0.3s ease !important;
+      border-radius: 50px !important;
+      padding: 12px 28px !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      border: 1px solid rgba(255,255,255,0.2) !important;
+    }
+    .whatsapp-btn:hover {
+      transform: translateY(-4px) scale(1.05) !important;
+      box-shadow: 10px 10px 25px rgba(0,0,0,0.7), -6px -6px 15px rgba(255,255,255,0.2) !important;
+      background: linear-gradient(145deg, #0000CD, #1E90FF) !important;
+    }
+    .whatsapp-btn:active {
+      transform: translateY(2px) !important;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.6) !important;
+    }
+
+    /* Footer adjustments */
+    .footer-bottom {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.85);
+      color: #ccc;
+      border-top: 2px solid #D4AF37;
     }
   </style>
 </head>
@@ -42,8 +79,6 @@
       <a href="index.html" class="logo">
         <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
         <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
-        <!-- Added Trademark Under Logo -->
-        <span class="logo-powered" style="display: block; font-size: 0.75rem; color: #D4AF37; margin-top: 5px; font-weight: normal; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
       </a>
 
       <button class="menu-toggle" aria-label="Toggle menu">
@@ -70,9 +105,9 @@
     <h1>About Father Peter</h1>
     <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">A journey of faith, calling, and service.</p>
 
-    <!-- 3D Picture Added Here -->
+    <!-- 3D Moving Picture Added Here -->
     <div class="about-3d-container">
-      <img src="https://i.ibb.co/M5ySxpCD/Chat-GPT-Image-Jul-11-2026-07-39-03-AM.png" alt="About Father Peter" border="0" class="about-3d-img" />
+      <img src="https://i.ibb.co/M5ySxpCD/Chat-GPT-Image-Jul-11-2026-07-39-03-AM.png" alt="About Father Peter" border="0" class="moving-3d-img-about" />
     </div>
 
     <section style="text-align: left; max-width: 800px; margin: 0 auto;">
@@ -100,8 +135,6 @@
       <div class="footer-col">
         <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
         <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
-        <!-- Added Trademark in Footer -->
-        <p style="font-size: 0.8rem; color: #D4AF37; margin-top: 10px;">Powered by KS1 Empire Global Foundation (KS1EGF)</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -123,7 +156,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 Father Peter. All rights reserved. · Made with faith and love.
+      © 2026 Father Peter. All rights reserved. · Made with faith and love.<br>
+      <span style="font-size: 0.85rem; color: #D4AF37; margin-top: 8px; display: inline-block; font-weight: bold; letter-spacing: 1px;">Powered by KS1 Empire Global Foundation (KS1EGF)</span>
     </div>
   </footer>
 
