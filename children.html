@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Children's Gathering — Father Peter</title>
+  <meta name="description" content="A joyful gathering for children to learn about Jesus through stories, songs, and friendship." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-cross">✝</div>
+    <h1>Father Peter</h1>
+    <p>Walking Together in Faith, Hope, and Love.</p>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-name"><span class="cross">✝</span>Father Peter</span>
+        <span class="logo-tagline">Walking Together in Faith, Hope, and Love.</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Daily Reflection</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="prayer.html">Prayer Requests</a></li>
+          <li><a href="children.html" class="active">Children's Gathering</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+        <a href="#" class="whatsapp-btn wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Children's Gathering</h1>
+    <p>A joyful time for little hearts to meet Jesus.</p>
+  </section>
+
+  <section>
+    <div class="container children-content">
+      <div class="fade-in">
+        <h2>Upcoming Gathering</h2>
+        <p>Come and join us for a beautiful morning of stories from the Bible, joyful songs, crafts, and friendship. Children will learn about the love of Jesus in a warm, safe, and happy environment.</p>
+
+        <ul class="event-details">
+          <li><strong>Date:</strong> Saturday, July 18, 2026</li>
+          <li><strong>Time:</strong> 10:00 AM – 12:00 PM</li>
+          <li><strong>Location:</strong> Parish Hall</li>
+          <li><strong>Ages:</strong> 4 – 12 years</li>
+          <li><strong>Cost:</strong> Free</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Register Your Child</h3>
+        <p>Fill in the details below, and we will open WhatsApp with your registration message.</p>
+
+        <form id="child-form" style="margin-top: 1rem;">
+          <label for="parent-name">Parent / Guardian Name</label>
+          <input type="text" id="parent-name" placeholder="Your name" required />
+
+          <label for="child-name">Child's Name</label>
+          <input type="text" id="child-name" placeholder="Child's name" required />
+
+          <label for="child-age">Child's Age</label>
+          <input type="text" id="child-age" placeholder="e.g. 7" />
+
+          <button type="submit" class="btn btn-gold">💬 Register Through WhatsApp</button>
+        </form>
+
+        <h3 style="margin-top: 2.5rem;">Photos from Past Gatherings</h3>
+        <div class="children-gallery">
+          <img src="images/children.jpg" alt="Children gathering 1"
+               onerror="this.src='https://via.placeholder.com/300x300/12355B/D4AF37?text=Gathering+1'" />
+          <img src="images/children.jpg" alt="Children gathering 2"
+               onerror="this.src='https://via.placeholder.com/300x300/12355B/D4AF37?text=Gathering+2'" />
+          <img src="images/children.jpg" alt="Children gathering 3"
+               onerror="this.src='https://via.placeholder.com/300x300/12355B/D4AF37?text=Gathering+3'" />
+          <img src="images/children.jpg" alt="Children gathering 4"
+               onerror="this.src='https://via.placeholder.com/300x300/12355B/D4AF37?text=Gathering+4'" />
+        </div>
+      </div>
+
+      <aside class="parent-info fade-in">
+        <h3>For Parents</h3>
+        <ul>
+          <li>Children must be accompanied by a parent at drop-off</li>
+          <li>Please bring a water bottle</li>
+          <li>All activities are supervised by trained volunteers</li>
+          <li>Snacks will be provided</li>
+          <li>Let us know of any allergies or special needs</li>
+        </ul>
+        <p style="margin-top: 1rem; font-style: italic;">"Let the little children come to me." — Matthew 19:14</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo"><span class="cross">✝</span>Father Peter</div>
+        <p class="footer-tagline">Walking Together in Faith, Hope, and Love.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reflection.html">Daily Reflection</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministry</h4>
+        <a href="prayer.html">Prayer Requests</a>
+        <a href="children.html">Children's Gathering</a>
+        <a href="donate.html">Donate</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#" class="wa-link" data-message="Peace be with you, Father Peter.">💬 WhatsApp Message</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="current-year"></span> Father Peter. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
